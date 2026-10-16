@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CrowdIndex Gizlilik Politikası</title>
+  <meta name="description" content="CrowdIndex uygulaması için gizlilik politikası. Konum izinleri, verilerin kullanımı, OpenStreetMap ve iletişim bilgileri." />
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent-1:#0f172a;
+      --accent-2:#0369a1;
+      --accent-3:#06b6d4;
+      --radius:12px;
+      --maxw:960px;
+      --gap:20px;
+      --shadow: 0 6px 18px rgba(15,23,42,0.08);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Color Emoji", sans-serif;
+      color:var(--accent-1);
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #eef4fb 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.6;
+      padding:32px 16px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+    }
+    header{
+      background:linear-gradient(90deg,var(--accent-2),var(--accent-3));
+      color:white;
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:var(--shadow);
+      margin-bottom:var(--gap);
+    }
+    header h1{
+      margin:0 0 6px 0;
+      font-size:1.5rem;
+      letter-spacing:0.2px;
+    }
+    header p{margin:0;font-size:0.95rem;opacity:0.95}
+    main{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:var(--gap);
+    }
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+    nav.toc{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:12px;
+    }
+    nav.toc a{
+      background:#eef6fb;
+      color:var(--accent-2);
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:0.9rem;
+      border:1px solid rgba(3,105,161,0.06);
+    }
+    h2{font-size:1.05rem;margin:0 0 10px 0}
+    h3{font-size:0.98rem;margin:0 0 8px 0}
+    p{margin:0 0 12px 0;color:#111827}
+    .muted{color:var(--muted);font-size:0.95rem}
+    ul{margin:0 0 12px 20px}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:6px;font-size:0.92em}
+    .note{
+      background:#fff7ed;border-left:4px solid #f59e0b;padding:12px;border-radius:6px;color:#92400e;
+    }
+    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (min-width:820px){
+      main{
+        grid-template-columns: 1fr;
+      }
+      header h1{font-size:1.75rem}
+    }
+    .section-link{float:right;font-size:0.85rem;color:var(--accent-2);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header aria-labelledby="title">
+      <h1 id="title">CrowdIndex Gizlilik Politikası</h1>
+      <p class="muted">Bu sayfa CrowdIndex uygulaması için gizlilik uygulamalarının genel açıklamasını sağlar. Yayımlamadan önce iletişim bilgilerini güncelleyin.</p>
+      <nav class="toc" aria-label="İçindekiler">
+        <a href="#genel">Genel Bilgiler</a>
+        <a href="#konum">Konum İzinleri</a>
+        <a href="#mekanlar">Yakındaki Mekânlar</a>
+        <a href="#250m">250 Metre Doğrulaması</a>
+        <a href="#bildirimler">Yoğunluk Bildirimleri</a>
+        <a href="#favoriler">Favoriler & Cihaz Verileri</a>
+        <a href="#osm">OpenStreetMap Kullanımı</a>
+        <a href="#guvenlik">Veri Güvenliği</a>
+        <a href="#saklama">Saklama ve Silme</a>
+        <a href="#cocuk">Çocukların Gizliliği</a>
+        <a href="#degisiklik">Politika Değişiklikleri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="genel" class="card" aria-labelledby="genel-baslik">
+        <h2 id="genel-baslik">Genel Bilgiler <a class="section-link" href="#genel">#</a></h2>
+        <p class="muted">Güncelleme tarihi: 2026-10-16</p>
+        <p>Bu gizlilik politikası, CrowdIndex uygulamasının kullanıcılarla ilgili hangi tür bilgileri toplayabileceğini, bu bilgilerin nasıl kullanılabileceğini ve kullanıcıların veri üzerindeki kontrollerini genel olarak açıklar. Bu doküman yasal bir tavsiye değildir; uygulama davranışı hakkında kesin teknik ayrıntılar için geliştirici ile iletişime geçin.</p>
+      </section>
+
+      <section id="konum" class="card" aria-labelledby="konum-baslik">
+        <h2 id="konum-baslik">Konum İzinleri <a class="section-link" href="#konum">#</a></h2>
+        <p>Uygulama, yakınlığa dayalı özellikler sunmak amacıyla cihaz konumuna erişim isteyebilir. Konum erişimi yalnızca kullanıcı net olarak izin verirse sağlanır. İzin verilmediği takdirde konuma dayalı işlevler çalışmayabilir veya sınırlı olabilir.</p>
+        <p class="muted">Kullanıcıya verilen kontroller:</p>
+        <ul>
+          <li>Kullanıcı cihaz ayarlarından uygulamaya verilen konum iznini istediği zaman değiştirebilir.</li>
+          <li>Konum paylaşıldığında, kullanıcı hangi amaçla paylaşıldığı konusunda bilgilendirilir.</li>
+        </ul>
+      </section>
+
+      <section id="mekanlar" class="card" aria-labelledby="mekanlar-baslik">
+        <h2 id="mekanlar-baslik">Yakındaki Mekânlar <a class="section-link" href="#mekanlar">#</a></h2>
+        <p>Uygulama, kullanıcının konum izni varsa kullanıcıya yakın olan mekânları gösterebilir. Mekân verileri (isim, konum, kategori vb.) uygulama içinde görsel amaçla sunulabilir. Bu veriler cihaz üzerinde görüntülenebileceği gibi harici açık kaynak harita veri kaynaklarından alınan veriler de kullanılabilir—örneğin OpenStreetMap (aşağıda açıklanmıştır).</p>
+      </section>
+
+      <section id="250m" class="card" aria-labelledby="250m-baslik">
+        <h2 id="250m-baslik">250 Metre Yakınlık Doğrulaması <a class="section-link" href="#250m">#</a></h2>
+        <p>Uygulama, belirli özellikler için kullanıcının bir mekâna fiziksel olarak yakın olup olmadığını kontrol etmek amacıyla konum verisini kullanabilir. Bu tür bir yakınlık doğrulaması örneğin 250 metre gibi bir eşik temelinde yapılabilir. Bu doğrulama cihazdaki anlık konum verileriyle gerçekleştirilir; doğrulama mantığı uygulamanın çalışmasına göre değişebilir.</p>
+        <p class="muted">Not: Bu politika uygulamanın tam doğrulama mantığını belgelemez; kesin teknik davranış için uygulama kaynaklarına veya geliştirici açıklamalarına bakın.</p>
+      </section>
+
+      <section id="bildirimler" class="card" aria-labelledby="bildirimler-baslik">
+        <h2 id="bildirimler-baslik">Kullanıcıların Paylaştığı Yoğunluk Bildirimleri <a class="section-link" href="#bildirimler">#</a></h2>
+        <p>Uygulama kullanıcıların gözlemlediği mekân yoğunluğunu (ör. boş, orta, kalabalık) bildirme özelliği sunabilir. Bu bildirimler kullanıcı tarafından açıkça gönderilir ve genellikle şu tür bilgileri içerebilir:</p>
+        <ul>
+          <li>Mekân kimliği veya adı (kullanıcının seçtiği mekân)</li>
+          <li>Gönderilen yoğunluk seviyesi veya kısa yorum</li>
+          <li>Zaman damgası (yerel cihaz saati)</li>
+        </ul>
+        <p>Bu bildirimlerin anonimleştirilmesi, toplanması veya paylaşılması uygulamanın teknik tasarımına bağlıdır. Bu sayfada bu verilerin üçüncü taraflarla paylaşılıp paylaşılmadığına ilişkin kesin bir beyan verilmemektedir; bu konuda net bilgi için <strong>hibayk@icloud.com</strong> adresine başvurun.</p>
+      </section>
+
+      <section id="favoriler" class="card" aria-labelledby="favoriler-baslik">
+        <h2 id="favoriler-baslik">Favoriler ve Cihazda Tutulan Veriler <a class="section-link" href="#favoriler">#</a></h2>
+        <p>CrowdIndex, kullanıcının favorilerine eklediği mekân bilgilerini ve uygulama içi tercihleri cihaz üzerinde saklayabilir. Bu saklama genellikle uygulama verisi (ör. uygulama deposu, mobil cihazın yerel depolaması) seviyesinde olur ve uygulamanın sunucu tarafı bir kaydı olup olmadığı uygulamanın tasarımına bağlıdır.</p>
+        <p class="muted">Cihazda tutulan verilerin kontrolü:</p>
+        <ul>
+          <li>Kullanıcılar favorileri uygulama içinden kaldırabilir veya cihaz ayarlarından uygulama verilerini temizleyebilir.</li>
+          <li>Cihaz kaybı veya izinsiz erişim durumları için cihaz güvenlik önlemleri (ekran kilidi, şifreleme vb.) kullanıcı sorumluluğundadır.</li>
+        </ul>
+      </section>
+
+      <section id="osm" class="card" aria-labelledby="osm-baslik">
+        <h2 id="osm-baslik">OpenStreetMap Kullanımı <a class="section-link" href="#osm">#</a></h2>
+        <p>Eğer uygulama harita veya mekân verileri için OpenStreetMap (OSM) gibi açık kaynaklı harita verilerini kullanıyorsa, OSM'nin kendi lisans ve kullanım koşullarına uyulması gerekir. OpenStreetMap verilerinin kullanımında OSM topluluğunun lisans gereksinimleri (ör. atıf zorunlulukları) geçerli olabilir.</p>
+        <p class="muted">Not: OSM kullanımı varsa harita görüntüleme için harici sunuculara istekler gönderilebilir; bu istekler üçüncü taraf sunucular tarafından loglanabilir. Bu sayfada OSM veya üçüncü taraf servislerle yapılan teknik entegrasyonların ayrıntıları verilmemektedir.</p>
+      </section>
+
+      <section id="guvenlik" class="card" aria-labelledby="guvenlik-baslik">
+        <h2 id="guvenlik-baslik">Veri Güvenliği <a class="section-link" href="#guvenlik">#</a></h2>
+        <p>Uygulama geliştiricisi verilerin güvenliğini sağlamak için makul teknik ve idari önlemler uygulayabilir. Bu önlemler şunları içerebilir: iletim sırasında şifreleme, erişim kontrolleri ve cihaz tarafı depolama için temel güvenlik uygulamaları. Ancak hiçbir sistem mutlak güvenlik sağlamaz; kullanıcıların da cihaz güvenliğini sağlamaları önemlidir.</p>
+      </section>
+
+      <section id="saklama" class="card" aria-labelledby="saklama-baslik">
+        <h2 id="saklama-baslik">Veri Saklama ve Silme <a class="section-link" href="#saklama">#</a></h2>
+        <p>Uygulamanın hangi verileri ne kadar süreyle sakladığı uygulamanın yapılandırmasına ve geliştiricinin tercihine bağlıdır. Bu belgede kesin saklama süreleri verilmemektedir. Kesin saklama süreleri, sunucu kullanımı veya üçüncü taraf hizmetler söz konusuysa farklılık gösterebilir.</p>
+        <p class="muted">Veri silme talepleri:</p>
+        <ul>
+          <li>Veri sahibiyseniz ve cihazda saklanan verilerin silinmesini istiyorsanız, uygulama içi ayarlar veya cihaz ayarları üzerinden verileri silebilirsiniz (uygulamanın sunduğu imkânlara bağlı olarak).</li>
+          <li>Sunucu tarafı veriler veya üçüncü taraflarla ilgili silme talepleri için geliştirici ile iletişime geçin: <strong>hibayk@icloud.com</strong>.</li>
+        </ul>
+      </section>
+
+      <section id="cocuk" class="card" aria-labelledby="cocuk-baslik">
+        <h2 id="cocuk-baslik">Çocukların Gizliliği <a class="section-link" href="#cocuk">#</a></h2>
+        <p>Uygulama çocuklara yönelik özel veri topluyorsa veya çocuk kullanıcılara hitap ediyorsa, yürürlükteki çocukların gizliliğini koruma yasalarına (ülkeye göre farklılık gösterir) uyulması gerekir. Bu sayfada uygulamanın hedef kitlesi ve çocuk verileriyle ilgili uygulaması hakkında kesin bir beyan verilmemektedir. Geliştirici, uygulamanın hedef kitlesi ve çocuk verileri ile ilgili politikasını açıkça belirtmelidir.</p>
+      </section>
+
+      <section id="degisiklik" class="card" aria-labelledby="degisiklik-baslik">
+        <h2 id="degisiklik-baslik">Politika Değişiklikleri <a class="section-link" href="#degisiklik">#</a></h2>
+        <p>Bu gizlilik politikası zaman içinde güncellenebilir. Önemli değişiklikler yapıldığında uygulama üzerinden veya bu sayfa aracılığıyla kullanıcılar bilgilendirilebilir. Güncelleme tarihleri sayfanın üstünde belirtilir.</p>
+      </section>
+
+      <section id="iletisim" class="card" aria-labelledby="iletisim-baslik">
+        <h2 id="iletisim-baslik">İletişim <a class="section-link" href="#iletisim">#</a></h2>
+        <p>Eğer gizlilik uygulamaları hakkında sorularınız, veri silme talepleriniz veya ek bilgi talepleriniz varsa lütfen aşağıdaki adresten iletişime geçin:</p>
+        <p class="note"><strong>İletişim e-posta adresi:</strong> <strong>hibayk@icloud.com</strong></p>
+        <p class="muted">Lütfen iletişim e-postasını doğrulayın; gerektiğinde güncelleyin.</p>
+      </section>
+
+      <section class="card" aria-labelledby="kapanis">
+        <h3 id="kapanis">Kapanış</h3>
+        <p>Bu belge CrowdIndex uygulaması için genel bir gizlilik açıklaması sunar. Bu sayfa uygulamanın tüm teknik ayrıntılarını veya yasal yükümlülüklerini kapsamayabilir. Yayımlamadan önce kuruluşunuzun hukuk danışmanıyla kontrol etmeniz önerilir.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Bu sayfa statik HTML/CSS ile hazırlanmıştır — GitHub Pages üzerinden ücretsiz olarak yayımlanmaya uygundur.</p>
+    </footer>
+  </div>
+</body>
+</html>
